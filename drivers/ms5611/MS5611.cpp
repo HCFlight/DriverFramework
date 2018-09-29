@@ -446,7 +446,6 @@ void MS5611::_measure()
 		}
 
 		m_measure_phase = 0;
-
 		m_sensor_data.temperature_c = convertTemperature(m_temperature_from_sensor) / 100.0;
 		m_sensor_data.pressure_pa = convertPressure(m_pressure_from_sensor);
 		m_sensor_data.last_read_time_usec = DriverFramework::offsetTime();

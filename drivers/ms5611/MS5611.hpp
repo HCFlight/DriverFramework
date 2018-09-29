@@ -60,7 +60,7 @@ struct ms5611_sensor_measurement {
 #if defined(__DF_OCPOC)
 #define BARO_DEVICE_PATH "/dev/spidev1.1"
 #else
-#define BARO_DEVICE_PATH "/dev/i2c-1"
+#define BARO_DEVICE_PATH "/dev/i2c-2"
 #endif
 
 // update frequency is 50 Hz (44.4-51.3Hz ) at 8x oversampling
